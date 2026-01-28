@@ -6,38 +6,104 @@
 @tailwind utilities;
 
 /* =========================================
-   2. Global Settings & Typography
+   2. Global Variables (Colors & Settings)
    ========================================= */
 :root {
-    /* Definimos una transición base para el cambio de tema */
+    /* Definimos los colores principales aquí para usarlos en sombras y bordes personalizados
+       Nota: Estos coinciden con tu configuración de Tailwind */
+    --color-primary: #800020;       /* Burdeos */
+    --color-primary-rgb: 128, 0, 32; /* Para opacidades */
+    --color-gold: #f8cd46;
+
     --transition-speed: 0.3s;
 }
 
+/* =========================================
+   3. Base Styles & Typography
+   ========================================= */
 html {
-    scroll-behavior: smooth; /* Desplazamiento suave entre anclas */
+    scroll-behavior: smooth;
 }
 
 body {
-    /* Aplicamos la fuente base y la transición de colores para el modo oscuro */
-    @apply font-sans antialiased transition-colors duration-300 ease-in-out;
-    /* Por defecto (Modo Claro) */
-    @apply bg-gray-50 text-gray-900;
+    font-family: 'Lexend', sans-serif;
+    /* Aplicamos la transición de colores suave para el modo oscuro */
+    @apply antialiased transition-colors duration-300 ease-in-out;
+    /* Colores por defecto (se complementan con las clases de Tailwind en el HTML) */
+    @apply bg-white text-[#1b0d10];
 }
 
-/* =========================================
-   3. Dark Mode Overrides
-   ========================================= */
-/* Tailwind usa la clase 'dark' en el elemento HTML o BODY.
-   Aquí reforzamos los estilos base cuando esa clase está activa.
-*/
+/* Override para Modo Oscuro en el body si no se aplican las clases de utilidad */
 .dark body {
-    @apply bg-gray-900 text-gray-100;
+    @apply bg-[#0a0a0a] text-[#fcf8f9];
+}
+
+/* Configuración de Material Symbols (Iconos) */
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
 }
 
 /* =========================================
-   4. Custom Scrollbar (Webkit)
+   4. Component: Navigation & Dropdown
    ========================================= */
-/* Un toque moderno para desarrolladores */
+/* Lógica para mostrar el menú desplegable al pasar el mouse */
+.group:hover .dropdown-menu {
+    display: block;
+    animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px) translateX(-50%); }
+    to { opacity: 1; transform: translateY(0) translateX(-50%); }
+}
+
+/* =========================================
+   5. Component: Custom Effects (Glows & Cards)
+   ========================================= */
+
+/* Efecto de resplandor para la foto de perfil (Index, Experiencia, etc.) */
+.photo-glow {
+    box-shadow: 0 0 25px -5px rgba(var(--color-primary-rgb), 0.15);
+}
+
+.dark .photo-glow {
+    box-shadow: 0 0 30px -5px rgba(var(--color-primary-rgb), 0.3);
+}
+
+/* Tarjetas de Certificación (Educacion.html) */
+.cert-card {
+    transition: all 0.3s ease;
+}
+
+.cert-card img {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.cert-card:hover img {
+    filter: grayscale(0%);
+}
+
+/* Acento de borde para experiencia académica (Docente.html) */
+.scholarly-accent {
+    border-left: 4px solid var(--color-primary);
+}
+
+/* =========================================
+   6. Component: Animations (Agradecimiento.html)
+   ========================================= */
+@keyframes scale-in {
+    0% { transform: scale(0); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.icon-animate {
+    animation: scale-in 0.5s ease-out forwards;
+}
+
+/* =========================================
+   7. Custom Scrollbar (Webkit)
+   ========================================= */
 ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
@@ -55,7 +121,6 @@ body {
     @apply bg-gray-600;
 }
 
-/* Scrollbar en Modo Oscuro */
 .dark ::-webkit-scrollbar-thumb {
     @apply bg-gray-600;
 }
@@ -65,9 +130,8 @@ body {
 }
 
 /* =========================================
-   5. Custom Utilities / Animations
+   8. Utility Helpers
    ========================================= */
-/* Clase de utilidad para ocultar elementos que se animarán con JS */
 .fade-in-section {
     opacity: 0;
     transform: translateY(20px);
@@ -78,13 +142,4 @@ body {
 .fade-in-section.is-visible {
     opacity: 1;
     transform: none;
-}
-
-/* Efecto de Glassmorphism (Opcional si quieres usarlo en el header) */
-.glass {
-    @apply bg-white/70 backdrop-blur-md border border-white/20;
-}
-
-.dark .glass {
-    @apply bg-gray-900/70 border-gray-700/30;
 }

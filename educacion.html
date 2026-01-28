@@ -4,15 +4,11 @@
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <title>Educación - CV Felipe Cuevas</title>
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <!-- Google Fonts: Lexend -->
+
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet"/>
-    <!-- Material Symbols Outlined -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-          rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-          rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
     <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -31,42 +27,11 @@
             },
         }
     </script>
-    <style type="text/tailwindcss">
-        .cert-card:hover img {
-            filter: grayscale(0%);
-        }
 
-        .cert-card img {
-            filter: grayscale(100%);
-            transition: filter 0.3s ease;
-        }
-
-        @layer base {
-            body {
-                font-family: 'Lexend', sans-serif;
-            }
-        }
-
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
-        }
-
-        .photo-glow {
-            box-shadow: 0 0 25px -5px rgba(128, 0, 32, 0.15);
-        }
-
-        .dark .photo-glow {
-            box-shadow: 0 0 30px -5px rgba(128, 0, 32, 0.3);
-        }
-
-        .group:hover .dropdown-menu {
-            display: block;
-        }
-    </style>
+    <link rel="stylesheet" href="static/css/index.css" />
 </head>
-<body class="bg-background-light dark:bg-background-dark font-display text-[#1b0d10] dark:text-[#fcf8f9]">
+<body class="bg-background-light dark:bg-background-dark font-display text-[#1b0d10] dark:text-[#fcf8f9] transition-colors duration-300">
 <div class="relative flex min-h-screen flex-col overflow-x-hidden">
-    <!-- Barra de Navegación Vertical Superior -->
     <header class="sticky top-0 z-50 w-full border-b border-zinc-200 dark:border-zinc-800 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
         <div class="mx-auto flex max-w-[1200px] items-center justify-between px-6 py-4">
             <div class="flex items-center gap-2">
@@ -106,7 +71,6 @@
 
     <main class="flex-1 px-4 md:px-20 lg:px-40 py-12">
         <div class="mx-auto max-w-[960px] flex flex-col gap-12">
-            <!-- Encabezado - Texto Principal -->
             <div class="flex flex-wrap justify-between items-end gap-6 border-b border-[#e7cfd3] dark:border-[#3d1f24] pb-8">
                 <div class="flex flex-col gap-3">
                     <h1 class="text-[#1b0d10] dark:text-[#fcf8f9] text-5xl font-black leading-tight tracking-[-0.033em]">
@@ -118,7 +82,6 @@
                     </p>
                 </div>
             </div>
-            <!-- Sección de Educación Universitaria -->
             <section>
                 <div class="flex items-center gap-3 mb-8">
                     <span class="material-symbols-outlined text-primary text-3xl">history_edu</span>
@@ -126,7 +89,6 @@
                         Educación Universitaria</h2>
                 </div>
                 <div class="grid grid-cols-[40px_1fr] gap-x-6">
-                    <!-- Educación 1 - Diplomado -->
                     <div class="flex flex-col items-center gap-1">
                         <div class="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary">
                             <span class="material-symbols-outlined text-xl">workspace_premium</span>
@@ -151,7 +113,6 @@
                             <span class="px-3 py-1 bg-[#f3e7e9] dark:bg-[#3d1f24] text-[#1b0d10] dark:text-[#fcf8f9] text-xs rounded-md">Aprendizaje Basado en Proyectos</span>
                         </div>
                     </div>
-                    <!-- Educación 2 - Ingeniería -->
                     <div class="flex flex-col items-center gap-1">
                         <div class="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-white shadow-lg">
                             <span class="material-symbols-outlined text-xl">workspace_premium</span>
@@ -170,7 +131,6 @@
                             <li>Alumno Tutor Académico</li>
                         </ul>
                     </div>
-                    <!-- Educación 3 - Técnico Profesional -->
                     <div class="flex flex-col items-center gap-1">
                         <div class="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-white">
                             <span class="material-symbols-outlined text-xl">workspace_premium</span>
@@ -189,7 +149,6 @@
                     </div>
                 </div>
             </section>
-            <!-- Sección Certificaciones Profesionales -->
             <section class="mt-8">
                 <div class="flex items-center gap-3 mb-8">
                     <span class="material-symbols-outlined text-primary text-3xl">verified</span>
@@ -197,7 +156,6 @@
                         Certificaciones Profesionales</h2>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <!-- Cert 1 -->
                     <div class="cert-card flex items-start gap-4 p-6 rounded-xl border border-[#e7cfd3] dark:border-[#3d1f24] bg-white dark:bg-[#2b161a] hover:shadow-xl hover:border-primary/30 transition-all cursor-default">
                         <div class="size-16 flex-shrink-0 bg-background-light dark:bg-background-dark rounded-lg p-2 flex items-center justify-center overflow-hidden">
                             <img class="w-full h-full object-contain" data-alt="Logo Certificación Profesional AWS"
@@ -211,7 +169,6 @@
                             </p>
                         </div>
                     </div>
-                    <!-- Cert 2 -->
                     <div class="cert-card flex items-start gap-4 p-6 rounded-xl border border-[#e7cfd3] dark:border-[#3d1f24] bg-white dark:bg-[#2b161a] hover:shadow-xl hover:border-primary/30 transition-all cursor-default">
                         <div class="size-16 flex-shrink-0 bg-background-light dark:bg-background-dark rounded-lg p-2 flex items-center justify-center overflow-hidden">
                             <img class="w-full h-full object-contain" data-alt="Logo Certificación Profesional AWS"
@@ -225,7 +182,6 @@
                             </p>
                         </div>
                     </div>
-                    <!-- Cert 3 -->
                     <div class="cert-card flex items-start gap-4 p-6 rounded-xl border border-[#e7cfd3] dark:border-[#3d1f24] bg-white dark:bg-[#2b161a] hover:shadow-xl hover:border-primary/30 transition-all cursor-default">
                         <div class="size-16 flex-shrink-0 bg-background-light dark:bg-background-dark rounded-lg p-2 flex items-center justify-center overflow-hidden">
                             <img class="w-full h-full object-contain" data-alt="Logo Certificación Profesional Oracle"
@@ -239,7 +195,6 @@
                             </p>
                         </div>
                     </div>
-                    <!-- Cert 4 -->
                     <div class="cert-card flex items-start gap-4 p-6 rounded-xl border border-[#e7cfd3] dark:border-[#3d1f24] bg-white dark:bg-[#2b161a] hover:shadow-xl hover:border-primary/30 transition-all cursor-default">
                         <div class="size-16 flex-shrink-0 bg-background-light dark:bg-background-dark rounded-lg p-2 flex items-center justify-center overflow-hidden">
                             <img class="w-full h-full object-contain" data-alt="Logo Certificación Profesional Oracle"
@@ -253,7 +208,6 @@
                             </p>
                         </div>
                     </div>
-                    <!-- Cert 5 -->
                     <div class="cert-card flex items-start gap-4 p-6 rounded-xl border border-[#e7cfd3] dark:border-[#3d1f24] bg-white dark:bg-[#2b161a] hover:shadow-xl hover:border-primary/30 transition-all cursor-default">
                         <div class="size-16 flex-shrink-0 bg-background-light dark:bg-background-dark rounded-lg p-2 flex items-center justify-center overflow-hidden">
                             <img class="w-full h-full object-contain" data-alt="Logo Certificación Profesional Oracle"
@@ -267,7 +221,6 @@
                             </p>
                         </div>
                     </div>
-                    <!-- Cert 6 -->
                     <div class="cert-card flex items-start gap-4 p-6 rounded-xl border border-[#e7cfd3] dark:border-[#3d1f24] bg-white dark:bg-[#2b161a] hover:shadow-xl hover:border-primary/30 transition-all cursor-default">
                         <div class="size-16 flex-shrink-0 bg-background-light dark:bg-background-dark rounded-lg p-2 flex items-center justify-center overflow-hidden">
                             <img class="w-full h-full object-contain" data-alt="Logo Certificación Profesional Python Institute"
@@ -283,7 +236,6 @@
                     </div>
                 </div>
             </section>
-            <!-- Resumen - Instructor Certificado -->
             <div class="mt-12 p-8 bg-primary/5 dark:bg-primary/10 rounded-2xl border border-primary/20 flex flex-col md:flex-row items-center gap-8">
                 <div class="flex-shrink-0 p-4 bg-primary/10 rounded-full">
                     <span class="material-symbols-outlined text-primary text-5xl">military_tech</span>
@@ -306,19 +258,18 @@
                     </div>
                 </div>
             </div>
-            <!-- Footer CTA -->
             <div class="flex flex-col items-center gap-6 py-12 border-t border-[#e7cfd3] dark:border-[#3d1f24]">
                 <p class="text-sm font-medium text-[#9a4c59] dark:text-[#c48e98] uppercase tracking-widest">
                     ¿Interesado en mi CV completo?
                 </p>
                 <div class="flex gap-4">
-                    <button class="flex min-w-[200px] cursor-pointer items-center justify-center rounded-lg h-12 px-8 bg-primary text-white text-base font-bold shadow-lg hover:translate-y-[-2px] transition-all">
+                    <a href="static/CV_Felipe_Cuevas_2026.pdf" download="CV_Felipe_Cuevas_2026.pdf" class="flex min-w-[200px] cursor-pointer items-center justify-center rounded-lg h-12 px-8 bg-primary text-white text-base font-bold shadow-lg hover:translate-y-[-2px] transition-all">
                         <span class="material-symbols-outlined mr-2">download</span>
                         Descargar CV
-                    </button>
-                    <button class="flex min-w-[120px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-[#f3e7e9] dark:bg-[#3d1f24] text-[#1b0d10] dark:text-[#fcf8f9] text-base font-bold hover:bg-[#e7cfd3] transition-all">
+                    </a>
+                    <a href="contacto.html" class="flex min-w-[120px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-[#f3e7e9] dark:bg-[#3d1f24] text-[#1b0d10] dark:text-[#fcf8f9] text-base font-bold hover:bg-[#e7cfd3] transition-all">
                         Envíame un mensaje
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>

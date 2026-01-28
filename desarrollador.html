@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Experiencia Desarrollador - CV Felipe Cuevas</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+          rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&amp;display=swap"
+          rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#800020",
+                        "background-light": "#ffffff",
+                        "background-dark": "#0a0a0a",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        body {
+            font-family: 'Lexend', sans-serif;
+            @apply bg-background-light text-[#1b0d10];
+        }
+        .group:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
+</head>
+<body class="transition-colors duration-300">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+    <div class="layout-container flex h-full grow flex-col">
+        <header class="sticky top-0 z-50 w-full border-b border-zinc-200 dark:border-zinc-800 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+            <div class="mx-auto flex max-w-[1200px] items-center justify-between px-6 py-4">
+                <div class="flex items-center gap-2">
+                    <div class="text-primary">
+                        <span class="material-symbols-outlined text-3xl">terminal</span>
+                    </div>
+                    <h1 class="text-xl font-bold tracking-tight text-zinc-900 dark:text-white">CV Felipe Cuevas</h1>
+                </div>
+                <nav class="hidden md:flex flex-1 justify-center items-center gap-10">
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="index.html">Inicio</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="educacion.html">Educación</a>
+                    <div class="relative group h-full py-2">
+                        <a href="experiencia.html" class="flex items-center gap-1 text-sm font-medium hover:text-primary transition-colors">
+                            Experiencia
+                            <span class="material-symbols-outlined text-base">expand_more</span>
+                        </a>
+                        <div class="dropdown-menu absolute left-1/2 -translate-x-1/2 top-full hidden pt-2">
+                            <div class="w-48 bg-white dark:bg-zinc-900 border-t-2 border-primary shadow-xl rounded-b-lg overflow-hidden ring-1 ring-black/5">
+                                <a class="block px-5 py-3 text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:text-primary dark:hover:text-primary hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors border-b border-zinc-100 dark:border-zinc-800"
+                                   href="desarrollador.html">Desarrollador</a>
+                                <a class="block px-5 py-3 text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:text-primary dark:hover:text-primary hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors border-b border-zinc-100 dark:border-zinc-800"
+                                   href="docente.html">Docente Universitario</a>
+                                <a class="block px-5 py-3 text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:text-primary dark:hover:text-primary hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors"
+                                   href="instructor.html">Instructor Certificado</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="contacto.html">Contacto</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <button class="flex items-center justify-center rounded-lg bg-primary px-5 py-2 text-sm font-semibold text-white hover:bg-primary/90 transition-colors">
+                        Descargar CV
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main class="flex-1 flex flex-col items-center">
+            <div class="w-full max-w-[1200px] px-6 md:px-10 py-16">
+                <div class="flex flex-col gap-6 mb-16">
+                    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-primary/10 pb-12">
+                        <div class="max-w-3xl">
+                            <h1 class="text-4xl md:text-6xl font-black leading-tight tracking-tight text-[#1b0d10] mb-4">
+                                Desarrollador Full Stack
+                            </h1>
+                            <p class="text-2xl font-semibold text-primary">
+                                UTECH INACAP | Duoc UC
+                            </p>
+                        </div>
+                        <div class="flex flex-col md:items-end gap-2">
+                            <span class="text-xl font-medium text-accent-text">Ene 2013 — Ene 2024</span>
+                            <span class="px-3 py-1 bg-primary/10 text-primary text-sm font-bold rounded-full w-fit">Semipresencial</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-16">
+                    <div class="flex flex-col gap-12">
+                        <section>
+                            <h3 class="text-2xl font-bold mb-6 flex items-center gap-3">
+                                <span class="w-8 h-[2px] bg-primary"></span>
+                                Detalles de mi experiencia
+                            </h3>
+                            <p class="text-lg text-[#1b0d10]/80 leading-relaxed mb-8">
+                                Como docente instructor me tocó actuar como desarrollador de aplicaciones web y aplicaciones
+                                de escritorio en distintos lenguajes para la generación de evaluaciones y exámenes finales
+                                para la <strong>Universidad Tecnológica de Chile INACAP</strong> y para <strong>Duoc UC</strong>,
+                                incluso el año 2014 me tocó desarrollar la aplicación que resultó ser el <strong>Examen
+                                Final de Competencias</strong> para la Carrera de Técnico Analista Programador.
+                            </p>
+                            <div class="space-y-6">
+                                <h4 class="text-xl font-bold text-primary">Aspectos Técnicos</h4>
+                                <ul class="grid gap-6">
+                                    <li class="flex gap-4">
+                                        <span class="material-symbols-outlined text-primary shrink-0 mt-1">check_circle</span>
+                                        <div>
+                                            <p class="font-bold text-lg">Lenguajes de Programación</p>
+                                            <p class="text-[#1b0d10]/70">Me tocó realizar aplicaciones en PHP, Java y Python
+                                            para el BACK END, y en el FRONT END desarrolló en HTML5, CSS3 (Bootstrap) y JavaScript
+                                            (jQuery).</p>
+                                        </div>
+                                    </li>
+                                    <li class="flex gap-4">
+                                        <span class="material-symbols-outlined text-primary shrink-0 mt-1">check_circle</span>
+                                        <div>
+                                            <p class="font-bold text-lg">Bases de Datos</p>
+                                            <p class="text-[#1b0d10]/70">Las aplicaciones que desarrollé se conectaron con
+                                            diversos motores de bases de datos: MySQL, SQL Server 2019 y Oracle DataBase 19.</p>
+                                        </div>
+                                    </li>
+                                    <li class="flex gap-4">
+                                        <span class="material-symbols-outlined text-primary shrink-0 mt-1">check_circle</span>
+                                        <div>
+                                            <p class="font-bold text-lg">Frameworks</p>
+                                            <p class="text-[#1b0d10]/70">Los principales frameworks en los que desarrollé
+                                                aplicaciones fueron Django y Flask en el caso de Python, y Spring en el caso
+                                                de Java.</p>
+                                        </div>
+                                    </li>
+                                    <li class="flex gap-4">
+                                        <span class="material-symbols-outlined text-primary shrink-0 mt-1">check_circle</span>
+                                        <div>
+                                            <p class="font-bold text-lg">Tecnología de la Nube</p>
+                                            <p class="text-[#1b0d10]/70">Mis aplicaciones se conectaron con diversos servicios
+                                                de Oracle Cloud Infrastructure y de AWS, ya sea para utilizar bases de datos, o
+                                                servicios sin servidor (serverless).</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section class="mt-8">
+                            <h3 class="text-2xl font-bold mb-8">Desarrollador Full Stack Independiente</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="group relative aspect-video rounded-xl overflow-hidden shadow-lg border border-primary/10">
+                                    <img alt="Dashboard View"
+                                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                         src="static/img/manzagrafica.png"/>
+                                    <div class="absolute inset-0 bg-gradient-to-t from-background-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                                        <p class="text-white font-medium">Manza Gráfica App (Python - Django)</p>
+                                    </div>
+                                </div>
+                                <div class="group relative aspect-video rounded-xl overflow-hidden shadow-lg border border-primary/10">
+                                    <img alt="Team Collaboration"
+                                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                         src="static/img/felipe_cuevas_cv.png"/>
+                                    <div class="absolute inset-0 bg-gradient-to-t from-background-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                                        <p class="text-white font-medium">Sitio Web Presentacional</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="flex flex-col gap-10">
+                        <div class="bg-primary/5 rounded-2xl p-8 border border-primary/10">
+                            <h4 class="text-lg font-bold mb-6 text-[#1b0d10]">Conjunto de Tecnologías</h4>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="flex flex-col items-center p-4 bg-white rounded-xl shadow-sm border border-primary/5">
+                                    <div class="size-10 flex items-center justify-center text-primary mb-2">
+                                        <span class="material-symbols-outlined text-3xl">terminal</span>
+                                    </div>
+                                    <span class="text-xs font-bold uppercase tracking-tighter">Java</span>
+                                </div>
+                                <div class="flex flex-col items-center p-4 bg-white rounded-xl shadow-sm border border-primary/5">
+                                    <div class="size-10 flex items-center justify-center text-primary mb-2">
+                                        <span class="material-symbols-outlined text-3xl">terminal</span>
+                                    </div>
+                                    <span class="text-xs font-bold uppercase tracking-tighter">Python</span>
+                                </div>
+                                <div class="flex flex-col items-center p-4 bg-white rounded-xl shadow-sm border border-primary/5">
+                                    <div class="size-10 flex items-center justify-center text-primary mb-2">
+                                        <span class="material-symbols-outlined text-3xl">cloud</span>
+                                    </div>
+                                    <span class="text-xs font-bold uppercase tracking-tighter">AWS</span>
+                                </div>
+                                <div class="flex flex-col items-center p-4 bg-white rounded-xl shadow-sm border border-primary/5">
+                                    <div class="size-10 flex items-center justify-center text-primary mb-2">
+                                        <span class="material-symbols-outlined text-3xl">cloud</span>
+                                    </div>
+                                    <span class="text-xs font-bold uppercase tracking-tighter">OCI</span>
+                                </div>
+                            </div>
+                            <div class="mt-8 flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-white text-[10px] font-bold rounded border border-primary/10">PHP</span>
+                                <span class="px-2 py-1 bg-white text-[10px] font-bold rounded border border-primary/10">Docker</span>
+                                <span class="px-2 py-1 bg-white text-[10px] font-bold rounded border border-primary/10">Framework Django</span>
+                                <span class="px-2 py-1 bg-white text-[10px] font-bold rounded border border-primary/10">Framework Spring</span>
+                                <span class="px-2 py-1 bg-white text-[10px] font-bold rounded border border-primary/10">GitHub</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <h4 class="text-lg font-bold">Áreas</h4>
+                            <div class="flex flex-col gap-3">
+                                <div class="flex items-center gap-3 p-3 border-l-2 border-primary bg-primary/5">
+                                    <span class="material-symbols-outlined text-primary">groups</span>
+                                    <span class="text-sm font-medium">Control de Calidad</span>
+                                </div>
+                                <div class="flex items-center gap-3 p-3 border-l-2 border-primary bg-primary/5">
+                                    <span class="material-symbols-outlined text-primary">architecture</span>
+                                    <span class="text-sm font-medium">Desarrollo Web</span>
+                                </div>
+                                <div class="flex items-center gap-3 p-3 border-l-2 border-primary bg-primary/5">
+                                    <span class="material-symbols-outlined text-primary">terminal</span>
+                                    <span class="text-sm font-medium">Frameworks</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="mt-auto w-full border-t border-zinc-100 dark:border-zinc-900 py-10">
+            <div class="mx-auto flex max-w-[1200px] flex-col items-center justify-between gap-6 px-6 md:flex-row">
+                <p class="text-sm font-medium text-zinc-400">© 2025 Sitio Web desarrollado por <a href="https://www.linkedin.com/in/ffelipecuevasc/" class="hover:text-primary transition-colors">Felipe Cuevas</a></p>
+                <div class="flex items-center gap-4">
+                    <a href="https://www.linkedin.com/in/ffelipecuevasc/" target="_blank" class="text-zinc-400 hover:text-primary transition-colors" aria-label="LinkedIn Profile">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                            <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.25 6.5 1.75 1.75 0 016.5 8.25zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93-1.07 0-1.62.8-1.62 2.35V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+                        </svg>
+                    </a>
+                    <button class="flex items-center gap-2 rounded-full border border-zinc-200 dark:border-zinc-800 px-5 py-2.5 text-xs font-bold tracking-wide uppercase hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
+                            onclick="document.documentElement.classList.toggle('dark')">
+                        <span class="material-symbols-outlined text-lg">contrast</span>
+                        Cambiar Tema
+                    </button>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+
+</body>
+</html>

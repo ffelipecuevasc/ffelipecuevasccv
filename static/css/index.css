@@ -1,0 +1,90 @@
+/* =========================================
+   1. Tailwind Directives
+   ========================================= */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =========================================
+   2. Global Settings & Typography
+   ========================================= */
+:root {
+    /* Definimos una transición base para el cambio de tema */
+    --transition-speed: 0.3s;
+}
+
+html {
+    scroll-behavior: smooth; /* Desplazamiento suave entre anclas */
+}
+
+body {
+    /* Aplicamos la fuente base y la transición de colores para el modo oscuro */
+    @apply font-sans antialiased transition-colors duration-300 ease-in-out;
+    /* Por defecto (Modo Claro) */
+    @apply bg-gray-50 text-gray-900;
+}
+
+/* =========================================
+   3. Dark Mode Overrides
+   ========================================= */
+/* Tailwind usa la clase 'dark' en el elemento HTML o BODY.
+   Aquí reforzamos los estilos base cuando esa clase está activa.
+*/
+.dark body {
+    @apply bg-gray-900 text-gray-100;
+}
+
+/* =========================================
+   4. Custom Scrollbar (Webkit)
+   ========================================= */
+/* Un toque moderno para desarrolladores */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-gray-400 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-600;
+}
+
+/* Scrollbar en Modo Oscuro */
+.dark ::-webkit-scrollbar-thumb {
+    @apply bg-gray-600;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-400;
+}
+
+/* =========================================
+   5. Custom Utilities / Animations
+   ========================================= */
+/* Clase de utilidad para ocultar elementos que se animarán con JS */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    will-change: opacity, visibility;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+/* Efecto de Glassmorphism (Opcional si quieres usarlo en el header) */
+.glass {
+    @apply bg-white/70 backdrop-blur-md border border-white/20;
+}
+
+.dark .glass {
+    @apply bg-gray-900/70 border-gray-700/30;
+}

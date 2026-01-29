@@ -4,11 +4,12 @@
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <title>Experiencia Docente - CV Felipe Cuevas</title>
+    <link rel="icon" type="image/svg+xml" href="static/img/favicon.svg">
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
-
+    <link rel="stylesheet" href="static/css/index.css" />
     <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -27,8 +28,13 @@
             },
         }
     </script>
-
-    <link rel="stylesheet" href="static/css/index.css" />
+    <script>
+        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
 </head>
 <body class="bg-background-light dark:bg-background-dark text-[#1b0d10] dark:text-[#fcf8f9] transition-colors duration-300">
 <div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
@@ -40,6 +46,11 @@
                 </div>
                 <h1 class="text-xl font-bold tracking-tight text-zinc-900 dark:text-white">CV Felipe Cuevas</h1>
             </div>
+
+            <button id="mobile-menu-btn" class="md:hidden text-zinc-700 dark:text-zinc-200 focus:outline-none">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+
             <nav class="hidden md:flex flex-1 justify-center items-center gap-10">
                 <a class="text-sm font-medium hover:text-primary transition-colors" href="index.html">Inicio</a>
                 <a class="text-sm font-medium hover:text-primary transition-colors" href="educacion.html">Educación</a>
@@ -61,8 +72,26 @@
                 </div>
                 <a class="text-sm font-medium hover:text-primary transition-colors" href="contacto.html">Contacto</a>
             </nav>
-            <div class="flex items-center gap-4">
+
+            <div class="hidden md:flex items-center gap-4">
                 <a href="static/CV_Felipe_Cuevas_2026.pdf" download="CV_Felipe_Cuevas_2026.pdf" class="flex items-center justify-center rounded-lg bg-primary px-5 py-2 text-sm font-semibold text-white hover:bg-primary/90 transition-colors">
+                    Descargar CV
+                </a>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-white dark:bg-zinc-900 border-b border-zinc-200 dark:border-zinc-800 shadow-xl">
+            <div class="flex flex-col p-4 space-y-4">
+                <a class="text-base font-medium hover:text-primary transition-colors" href="index.html">Inicio</a>
+                <a class="text-base font-medium hover:text-primary transition-colors" href="educacion.html">Educación</a>
+                <a class="text-base font-medium hover:text-primary transition-colors" href="experiencia.html">Experiencia General</a>
+                <div class="pl-4 border-l-2 border-zinc-100 dark:border-zinc-700 space-y-2">
+                    <a class="block text-sm text-zinc-500 hover:text-primary" href="desarrollador.html">Desarrollador</a>
+                    <a class="block text-sm text-zinc-500 hover:text-primary" href="docente.html">Docente</a>
+                    <a class="block text-sm text-zinc-500 hover:text-primary" href="instructor.html">Instructor</a>
+                </div>
+                <a class="text-base font-medium hover:text-primary transition-colors" href="contacto.html">Contacto</a>
+                <a href="static/CV_Felipe_Cuevas_2026.pdf" download="CV_Felipe_Cuevas_2026.pdf" class="flex items-center justify-center rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-white w-full">
                     Descargar CV
                 </a>
             </div>
@@ -326,8 +355,7 @@
                         <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.25 6.5 1.75 1.75 0 016.5 8.25zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93-1.07 0-1.62.8-1.62 2.35V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
                     </svg>
                 </a>
-                <button class="flex items-center gap-2 rounded-full border border-zinc-200 dark:border-zinc-800 px-5 py-2.5 text-xs font-bold tracking-wide uppercase hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
-                        onclick="document.documentElement.classList.toggle('dark')">
+                <button id="theme-toggle" class="flex items-center gap-2 rounded-full border border-zinc-200 dark:border-zinc-800 px-5 py-2.5 text-xs font-bold tracking-wide uppercase hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors">
                     <span class="material-symbols-outlined text-lg">contrast</span>
                     Cambiar Tema
                 </button>
@@ -335,6 +363,6 @@
         </div>
     </footer>
 </div>
-
+<script src="static/js/index.js"></script>
 </body>
 </html>

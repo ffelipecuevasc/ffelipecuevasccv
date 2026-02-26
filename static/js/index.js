@@ -1,9 +1,79 @@
+const certificacionesData = {
+    "aws-cloud": {
+        titulo: "AWS Cloud Practitioner",
+        emisor: "Amazon Web Services",
+        fecha: "Ene. 2026",
+        habilidades: "Tecnología de la Nube",
+        imagen: "static/img/logos/aws.png",
+        url: "https://www.credly.com/badges/2d45672a-48b4-4013-808f-31c04072bb73/public_url"
+    },
+    "aws-ai": {
+        titulo: "AWS AI Practitioner",
+        emisor: "Amazon Web Services",
+        fecha: "Ene. 2026",
+        habilidades: "Inteligencia Artificial",
+        imagen: "static/img/logos/aws.png",
+        url: "https://www.credly.com/badges/c988f3a8-7022-43cb-9d65-9aa24e88f97f/public_url"
+    },
+    "oracle-ai-pro": {
+        titulo: "Oracle AI Professional",
+        emisor: "Oracle",
+        fecha: "Ago. 2025",
+        habilidades: "Inteligencia Artificial Generativa",
+        imagen: "static/img/logos/oracle.png",
+        url: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=6582C447AEECF465B74B30D01D884790D1DED49B9AE05C578BE6FC5F87FE6F81"
+    },
+    "oracle-dev-pro": {
+        titulo: "Oracle Developer Professional",
+        emisor: "Oracle",
+        fecha: "Sep. 2025",
+        habilidades: "Desarrollo de Aplicaciones",
+        imagen: "static/img/logos/oracle.png",
+        url: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=4D11E3EE49FE3FEA9B35687602B2C0DC19F0E7199C4AF982770081E4BDC783B5"
+    },
+    "oracle-oci-assoc": {
+        titulo: "Oracle OCI Associate",
+        emisor: "Oracle",
+        fecha: "Ago. 2025",
+        habilidades: "Tecnología en la Nube Oracle",
+        imagen: "static/img/logos/oracle.png",
+        url: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=FF54D5ABED5E9CB3DC9911C38388286977EA4716538312B45208B541F980CEB9"
+    },
+    "oracle-ai-assoc": {
+        titulo: "Oracle AI Associate",
+        emisor: "Oracle",
+        fecha: "Sep. 2025",
+        habilidades: "Inteligencia Artificial Aprendizaje de Máquina",
+        imagen: "static/img/logos/oracle.png",
+        url: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=D2718C25F892B7E4971471C86FD8B46CB74494922FE11EA5F7CBAB9A064CB45F"
+    },
+    "oracle-data-pro": {
+        titulo: "Oracle Data Science Professional",
+        emisor: "Oracle",
+        fecha: "Oct. 2025",
+        habilidades: "Ciencia de Datos IA",
+        imagen: "static/img/logos/oracle.png",
+        url: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=49DC655EC45500898B6310E36C9CF5ABC57B48F1BACA784ED3E296BDEFCC3F98"
+    },
+    "python-pcep": {
+        titulo: "Python Institute PCEP",
+        emisor: "Python",
+        fecha: "Dic. 2025",
+        habilidades: "Desarrollador Python",
+        imagen: "static/img/logos/python_institute.png",
+        url: "https://verify.openedg.org/?id=X8Wv.TU7j.416N"
+    }
+};
+
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Inyectar Componentes Globales (Header, Footer y Botón Volver Arriba)
     injectComponents();
 
     // 2. Inicializar Lógica (Eventos) una vez que el HTML existe
     initializeLogic();
+
+    // 3. Inicializar Lógica del Modal de Certificaciones
+    initializeModalLogic();
 });
 
 function injectComponents() {
@@ -178,4 +248,97 @@ function initializeLogic() {
             });
         });
     }
+}
+
+function initializeModalLogic() {
+    const modal = document.getElementById('cert-modal');
+    const modalContent = document.getElementById('cert-modal-content');
+    const closeBtn = document.getElementById('close-modal-btn');
+    const triggers = document.querySelectorAll('.modal-trigger');
+
+    // Si no estamos en la página de educación o no hay modal, salimos de la función
+    if (!modal || triggers.length === 0) return;
+
+    // Elementos del DOM a rellenar con datos
+    const imgEl = document.getElementById('cert-modal-img');
+    const titleEl = document.getElementById('cert-modal-title');
+    const issuerEl = document.getElementById('cert-modal-issuer');
+    const dateEl = document.getElementById('cert-modal-date');
+    const skillsEl = document.getElementById('cert-modal-skills');
+    const urlEl = document.getElementById('cert-modal-url');
+
+    // Función para abrir el modal
+    const openModal = (certId) => {
+        const data = certificacionesData[certId];
+        if (!data) return; // Prevención de errores
+
+        // 1. Inyectar los datos en el HTML
+        imgEl.src = data.imagen;
+        imgEl.alt = "Logo " + data.titulo;
+        titleEl.textContent = data.titulo;
+        issuerEl.textContent = data.emisor;
+        dateEl.textContent = data.fecha;
+        skillsEl.textContent = data.habilidades;
+        urlEl.href = data.url;
+
+        // 2. Mostrar el modal (animación de entrada)
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+
+        // Pequeño retraso para que CSS procese la transición fluida
+        setTimeout(() => {
+            modal.classList.remove('opacity-0');
+            modal.classList.add('opacity-100');
+            modalContent.classList.remove('scale-95');
+            modalContent.classList.add('scale-100');
+        }, 10);
+
+        // 3. Evitar que el usuario haga scroll en el fondo mientras el modal está abierto
+        document.body.style.overflow = 'hidden';
+    };
+
+    // Función para cerrar el modal
+    const closeModal = () => {
+        // 1. Animación de salida
+        modal.classList.remove('opacity-100');
+        modal.classList.add('opacity-0');
+        modalContent.classList.remove('scale-100');
+        modalContent.classList.add('scale-95');
+
+        // 2. Esperar a que termine la transición (300ms) para ocultar totalmente
+        setTimeout(() => {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }, 300);
+
+        // 3. Devolver el scroll al body
+        document.body.style.overflow = '';
+    };
+
+    // --- EVENT LISTENERS ---
+
+    // A. Escuchar clics en las tarjetas
+    triggers.forEach(trigger => {
+        trigger.addEventListener('click', () => {
+            const certId = trigger.getAttribute('data-cert-id');
+            openModal(certId);
+        });
+    });
+
+    // B. Cerrar al hacer clic en la "X"
+    closeBtn.addEventListener('click', closeModal);
+
+    // C. Cerrar al hacer clic afuera (en el fondo oscuro)
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+
+    // D. Cerrar al presionar la tecla "Escape"
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+            closeModal();
+        }
+    });
 }

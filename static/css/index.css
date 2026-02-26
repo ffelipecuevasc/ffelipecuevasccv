@@ -9,32 +9,18 @@
    2. Global Variables (Colors & Settings)
    ========================================= */
 :root {
-    /* Nueva Paleta: Orient 500 */
     --color-primary: #007EA7;
     --color-primary-rgb: 0, 126, 167;
     --color-gold: #f8cd46;
-
     --transition-speed: 0.3s;
 }
 
 /* =========================================
    3. Base Styles & Typography
    ========================================= */
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: 'Lexend', sans-serif;
     @apply antialiased transition-colors duration-300 ease-in-out;
-    /* Modo Claro: Fondo blanco, texto Orient 950 */
-    @apply bg-white text-orient-950;
-}
-
-/* Override para Modo Oscuro en el body */
-.dark body {
-    /* Modo Oscuro: Fondo Orient 950, texto Orient 50 */
-    @apply bg-orient-950 text-orient-50;
 }
 
 /* Configuración de Material Symbols (Iconos) */
@@ -64,19 +50,6 @@ body {
 
 .dark .photo-glow {
     box-shadow: 0 0 30px -5px rgba(var(--color-primary-rgb), 0.3);
-}
-
-.cert-card {
-    transition: all 0.3s ease;
-}
-
-.cert-card img {
-    filter: grayscale(100%);
-    transition: filter 0.3s ease;
-}
-
-.cert-card:hover img {
-    filter: grayscale(0%);
 }
 
 .scholarly-accent {

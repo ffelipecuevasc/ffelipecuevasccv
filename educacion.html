@@ -18,45 +18,10 @@
     <meta name="twitter:description" content="CV En Línea: Instructor Certificado, Desarrollo Full Stack & Inteligencia Artificial.">
     <meta name="twitter:image" content="https://ffelipecuevasc.github.io/ffelipecuevasccv/static/img/felipe_cuevas.png">
 
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="static/css/index.css" />
+    <link rel="stylesheet" href="static/css/tailwind.css" />
 
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        orient: {
-                            50: '#E4F3FF',
-                            100: '#B9E2FF',
-                            200: '#5DC9FF',
-                            300: '#00B0E8',
-                            400: '#0096C7',
-                            500: '#007EA7',
-                            600: '#00678A',
-                            700: '#005471',
-                            800: '#003B51',
-                            900: '#00212F',
-                            950: '#00131D',
-                        },
-                        "primary": "#007EA7",
-                        "primary-vibrant": "#00B0E8",
-                        "accent-gold": "#f8cd46",
-                        "background-light": "#ffffff",
-                        "background-dark": "#00131D",
-                    },
-                    fontFamily: {
-                        "display": ["Lexend", "sans-serif"]
-                    },
-                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
-                },
-            },
-        }
-    </script>
     <script>
         if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark');
@@ -91,7 +56,7 @@
                 </div>
                 <div class="grid grid-cols-[40px_1fr] gap-x-6">
                     <div class="flex flex-col items-center gap-1">
-                        <div class="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary">
+                        <div class="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary shadow-lg    ">
                             <span class="material-symbols-outlined text-xl">workspace_premium</span>
                         </div>
                         <div class="w-[2px] bg-primary/20 h-full"></div>
@@ -133,9 +98,10 @@
                         </ul>
                     </div>
                     <div class="flex flex-col items-center gap-1">
-                        <div class="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-white">
+                        <div class="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-white shadow-lg">
                             <span class="material-symbols-outlined text-xl">workspace_premium</span>
                         </div>
+                        <div class="w-[2px] bg-primary/20 h-full"></div>
                     </div>
                     <div class="flex flex-1 flex-col pt-1">
                         <h3 class="text-orient-950 dark:text-orient-50 text-xl font-bold">Técnico Analista Programador</h3>

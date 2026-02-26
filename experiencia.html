@@ -18,53 +18,10 @@
     <meta name="twitter:description" content="CV En Línea: Instructor Certificado, Desarrollo Full Stack & Inteligencia Artificial.">
     <meta name="twitter:image" content="https://ffelipecuevasc.github.io/ffelipecuevasccv/static/img/felipe_cuevas.png">
 
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        orient: {
-                            50: '#E4F3FF',
-                            100: '#B9E2FF',
-                            200: '#5DC9FF',
-                            300: '#00B0E8',
-                            400: '#0096C7',
-                            500: '#007EA7',
-                            600: '#00678A',
-                            700: '#005471',
-                            800: '#003B51',
-                            900: '#00212F',
-                            950: '#00131D',
-                        },
-                        "primary": "#007EA7",
-                        "primary-vibrant": "#00B0E8",
-                        "accent-gold": "#f8cd46",
-                        "background-light": "#ffffff",
-                        "background-dark": "#00131D",
-                    },
-                    fontFamily: {
-                        "display": ["Lexend", "sans-serif"]
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "2xl": "1.5rem",
-                        "3xl": "2.5rem",
-                        "full": "9999px"
-                    },
-                },
-            },
-        }
-    </script>
-
-    <link rel="stylesheet" href="static/css/index.css" />
+    <link rel="stylesheet" href="static/css/tailwind.css" />
 
     <script>
         if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {

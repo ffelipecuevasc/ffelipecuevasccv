@@ -22,6 +22,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="static/css/tailwind.css" />
     <link rel="stylesheet" href="static/css/index.css"/>
+    <link rel="stylesheet" href="static/css/aos.css" />
 
     <script>
         if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -120,7 +121,7 @@
                         </h3>
                         <div class="space-y-6">
                             <section id="iplacex">
-                                <div class="scholarly-accent pl-6 py-2">
+                                <div data-aos="fade-right" class="scholarly-accent pl-6 py-2">
                                     <p class="text-sm font-bold text-primary/70 dark:text-orient-400 mb-1">2024 - Actualidad</p>
                                     <p class="text-xl font-bold mb-2 leading-snug hover:text-primary transition-colors cursor-pointer text-orient-950 dark:text-orient-50">
                                         Instituto Profesional IPLACEX
@@ -138,7 +139,7 @@
                                 </div>
                             </section>
                             <section id="duoc">
-                                <div class="scholarly-accent pl-6 py-2">
+                                <div data-aos="fade-right" class="scholarly-accent pl-6 py-2">
                                     <p class="text-sm font-bold text-primary/70 dark:text-orient-400 mb-1">2023 - 2024</p>
                                     <p class="text-xl font-bold mb-2 leading-snug hover:text-primary transition-colors cursor-pointer text-orient-950 dark:text-orient-50">
                                         Instituto Profesional Duoc UC
@@ -154,7 +155,7 @@
                                 </div>
                             </section>
                             <section id="inacap">
-                                <div class="scholarly-accent pl-6 py-2">
+                                <div data-aos="fade-right" class="scholarly-accent pl-6 py-2">
                                     <p class="text-sm font-bold text-primary/70 dark:text-orient-400 mb-1">2013 - 2020</p>
                                     <p class="text-xl font-bold mb-2 leading-snug hover:text-primary transition-colors cursor-pointer text-orient-950 dark:text-orient-50">
                                         Universidad Tecnológica de Chile INACAP
@@ -266,7 +267,7 @@
                         </div>
                         <div class="p-6">
                             <h4 class="text-xs font-black uppercase tracking-widest text-primary/50 dark:text-orient-500 mb-4">
-                                Logros Academicos
+                                Cargos Especiales
                             </h4>
                             <ul class="space-y-4">
                                 <li class="flex gap-3">
@@ -288,5 +289,6 @@
     </footer>
 </div>
 <script src="static/js/index.js"></script>
+<script src="static/js/aos.js"></script>
 </body>
 </html>

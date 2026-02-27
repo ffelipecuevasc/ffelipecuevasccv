@@ -22,6 +22,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="static/css/tailwind.css" />
     <link rel="stylesheet" href="static/css/index.css"/>
+    <link rel="stylesheet" href="static/css/aos.css" />
 
     <script>
         if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -39,7 +40,7 @@
     <main class="mx-auto flex w-full max-w-[1200px] flex-1 items-center justify-center px-6 py-12 lg:py-20">
         <div class="grid grid-cols-1 items-center gap-10 lg:gap-16 lg:grid-cols-12 w-full">
             <div class="lg:col-span-5 flex justify-center lg:justify-start order-1 lg:order-1">
-                <div class="relative w-full max-w-[280px] md:max-w-[420px]">
+                <div data-aos="zoom-in" data-aos-delay="300" class="relative w-full max-w-[280px] md:max-w-[420px]">
                     <div class="relative photo-glow rounded-[2.5rem] p-px bg-gradient-to-b from-primary/30 to-transparent">
                         <div class="relative aspect-[3/4] overflow-hidden rounded-[2.4rem] border border-primary/20 bg-orient-50 dark:bg-orient-900">
                             <img alt="Foto tipo retrato Felipe Cuevas"
@@ -55,21 +56,21 @@
                 <div class="space-y-4">
                     <div class="inline-flex items-center gap-3">
                         <div class="h-px w-8 bg-primary"></div>
-                        <h2 class="text-primary text-sm font-bold tracking-[0.2em] uppercase">Ingeniero Informático</h2>
+                        <h2 data-aos="fade-down" class="text-primary text-sm font-bold tracking-[0.2em] uppercase">Ingeniero Informático</h2>
                     </div>
-                    <h3 class="text-3xl md:text-4xl lg:text-6xl font-extrabold tracking-tight text-orient-950 dark:text-white lg:leading-[1.1]">
+                    <h3 data-aos="fade-down" class="text-3xl md:text-4xl lg:text-6xl font-extrabold tracking-tight text-orient-950 dark:text-white lg:leading-[1.1]">
                         Docente <br class="hidden xl:block"/> Universitario &amp; <br class="hidden xl:block"/>
                         <span class="text-primary/90">Instructor Certificado</span>
                     </h3>
                 </div>
 
-                <p class="text-lg md:text-xl leading-relaxed text-orient-700 dark:text-orient-200 max-w-2xl">
+                <p data-aos="fade-up" data-aos-delay="100" class="text-lg md:text-xl leading-relaxed text-orient-700 dark:text-orient-200 max-w-2xl">
                     Soy <strong>Felipe Cuevas</strong>. Tengo más de 10 años de experiencia como instructor en
                     <span class="text-primary font-medium">Java & Python</span> con una pasión inquebrantable por la
                     enseñanza. Tengo <strong>certificaciones profesionales</strong> en Oracle, Java, Python, IA y AWS.
                 </p>
 
-                <div class="flex flex-wrap gap-5 pt-2 justify-center lg:justify-start w-full">
+                <div data-aos="fade-up" data-aos-delay="200" class="flex flex-wrap gap-5 pt-2 justify-center lg:justify-start w-full">
                     <a href="contacto.html" class="flex items-center gap-3 rounded-xl bg-primary px-10 py-4 text-base font-semibold text-white shadow-xl shadow-primary/20 hover:bg-primary/90 transition-all hover:-translate-y-0.5">
                         Mándame un mensaje
                         <span class="material-symbols-outlined text-xl">send</span>
@@ -114,5 +115,6 @@
     </footer>
 </div>
 <script src="static/js/index.js"></script>
+<script src="static/js/aos.js"></script>
 </body>
 </html>

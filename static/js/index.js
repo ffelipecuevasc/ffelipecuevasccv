@@ -1,3 +1,6 @@
+// =========================================
+// 1. Datos Estáticos de Certificaciones
+// =========================================
 const certificacionesData = {
     "aws-cloud": {
         titulo: "AWS Cloud Practitioner",
@@ -65,6 +68,9 @@ const certificacionesData = {
     }
 };
 
+// =========================================
+// 2. Evento Principal DOMContentLoaded
+// =========================================
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Inyectar Componentes Globales (Header, Footer y Botón Volver Arriba)
     injectComponents();
@@ -76,6 +82,9 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeModalLogic();
 });
 
+// =========================================
+// 3. Inyección de Componentes HTML
+// =========================================
 function injectComponents() {
     // --- A. DEFINICIÓN DEL HEADER ---
     const headerHTML = `
@@ -185,6 +194,9 @@ function injectComponents() {
     });
 }
 
+// =========================================
+// 4. Inicialización de Lógica General
+// =========================================
 function initializeLogic() {
     // =========================================
     // 1. Lógica del Modo Oscuro
@@ -248,8 +260,22 @@ function initializeLogic() {
             });
         });
     }
+
+    // =========================================
+    // 5. Inicialización de Animaciones (AOS)
+    // =========================================
+    if (typeof AOS !== 'undefined') {
+        AOS.init({
+            duration: 600, // Duración de la animación en milisegundos
+            once: true,    // La animación ocurre solo una vez al hacer scroll
+            easing: 'ease-out-quad', // Curva de animación profesional
+        });
+    }
 }
 
+// =========================================
+// 5. Lógica del Modal de Certificaciones
+// =========================================
 function initializeModalLogic() {
     const modal = document.getElementById('cert-modal');
     const modalContent = document.getElementById('cert-modal-content');
@@ -340,5 +366,16 @@ function initializeModalLogic() {
         if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
             closeModal();
         }
+    });
+}
+
+// =========================================
+// 6. Inicialización de Animaciones (AOS)
+// =========================================
+if (typeof AOS !== 'undefined') {
+    AOS.init({
+        duration: 600, // Duración de la animación en milisegundos
+        once: true,    // La animación ocurre solo una vez al hacer scroll
+        easing: 'ease-out-quad', // Curva de animación profesional
     });
 }

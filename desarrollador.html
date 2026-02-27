@@ -22,6 +22,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="static/css/tailwind.css"/>
     <link rel="stylesheet" href="static/css/index.css"/>
+    <link rel="stylesheet" href="static/css/aos.css" />
 
     <script>
         if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -129,7 +130,7 @@
                         </section>
                     </div>
                     <div class="flex flex-col gap-10">
-                        <div class="bg-orient-50 dark:bg-transparent rounded-2xl p-8 border border-orient-200 dark:border-orient-800">
+                        <div data-aos="fade-left" class="bg-orient-50 dark:bg-transparent rounded-2xl p-8 border border-orient-200 dark:border-orient-800">
                             <h4 class="text-lg font-bold mb-6 text-orient-950 dark:text-orient-50">Conjunto de Tecnologías</h4>
                             <div class="grid grid-cols-2 gap-4">
                                 <div class="flex flex-col items-center p-4 bg-white dark:bg-orient-900 rounded-xl shadow-sm border border-orient-100 dark:border-orient-800">
@@ -165,7 +166,7 @@
                                 <span class="px-2 py-1 bg-white dark:bg-orient-900 text-[10px] font-bold rounded border border-orient-200 dark:border-orient-700 text-orient-900 dark:text-orient-200">GitHub</span>
                             </div>
                         </div>
-                        <div class="flex flex-col gap-4">
+                        <div data-aos="fade-left" data-aos-delay="200" class="flex flex-col gap-4">
                             <h4 class="text-lg font-bold text-orient-950 dark:text-orient-50">Áreas</h4>
                             <div class="flex flex-col gap-3">
                                 <div class="flex items-center gap-3 p-3 border-l-2 border-primary bg-orient-50 dark:bg-transparent dark:border-orient-700">
@@ -191,5 +192,6 @@
     </div>
 </div>
 <script src="static/js/index.js"></script>
+<script src="static/js/aos.js"></script>
 </body>
 </html>

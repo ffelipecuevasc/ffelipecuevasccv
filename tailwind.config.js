@@ -26,6 +26,7 @@ module.exports = {
         "accent-gold": "#f8cd46",
         "background-light": "#ffffff",
         "background-dark": "#00131D",
+        "badge-light": "#ecf0ff",
       },
       fontFamily: {
         "display": ["Lexend", "sans-serif"]

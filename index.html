@@ -39,8 +39,34 @@
 
     <main class="mx-auto flex w-full max-w-[1200px] flex-1 items-center justify-center px-6 py-12 lg:py-20">
         <div class="grid grid-cols-1 items-center gap-10 lg:gap-16 lg:grid-cols-12 w-full">
-            <div class="lg:col-span-5 flex justify-center lg:justify-start order-1 lg:order-1">
-                <div data-aos="zoom-in" data-aos-delay="300" class="relative w-full max-w-[280px] md:max-w-[420px]">
+            <div class="lg:col-span-5 flex flex-col items-center justify-center lg:justify-start gap-6 order-1 lg:order-1">
+
+                <div data-aos="fade-down" data-aos-delay="50" class="flex flex-col items-center gap-3 w-full max-w-[280px] md:max-w-[420px]">
+                    <span class="text-xs font-bold uppercase tracking-widest text-primary">Profesional Certificado</span>
+                    <div class="relative w-full rounded-2xl bg-badge-light/90 dark:bg-orient-900/80 backdrop-blur-sm border border-orient-200 dark:border-orient-800 p-4">
+                        <div class="flex items-center justify-center gap-6">
+                            <div class="group relative transition-transform hover:-translate-y-1 duration-300" title="Oracle Certified">
+                                <div class="relative h-10 w-10 flex items-center justify-center">
+                                    <img alt="Oracle Badge" class="h-full w-full object-contain" src="static/img/logos/insignia_oracle.png"/>
+                                </div>
+                            </div>
+                            <div class="w-px h-8 bg-orient-200 dark:bg-orient-800"></div>
+                            <div class="group relative transition-transform hover:-translate-y-1 duration-300" title="AWS Certified">
+                                <div class="relative h-10 w-10 flex items-center justify-center">
+                                    <img alt="AWS Badge" class="h-full w-full object-contain" src="static/img/logos/insignia_aws.png"/>
+                                </div>
+                            </div>
+                            <div class="w-px h-8 bg-orient-200 dark:bg-orient-800"></div>
+                            <div class="group relative transition-transform hover:-translate-y-1 duration-300" title="Python Certified">
+                                <div class="relative h-10 w-10 flex items-center justify-center">
+                                    <img alt="Python Badge" class="h-full w-full object-contain" src="static/img/logos/insignia_python.png"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="zoom-in" data-aos-delay="200" class="relative w-full max-w-[280px] md:max-w-[420px]">
                     <div class="relative photo-glow rounded-[2.5rem] p-px bg-gradient-to-b from-primary/30 to-transparent">
                         <div class="relative aspect-[3/4] overflow-hidden rounded-[2.4rem] border border-primary/20 bg-orient-50 dark:bg-orient-900">
                             <img alt="Foto tipo retrato Felipe Cuevas"
@@ -50,6 +76,7 @@
                     </div>
                     <div class="absolute -bottom-4 -right-4 h-24 w-24 border-b-2 border-r-2 border-primary/40 rounded-br-[2.5rem] hidden lg:block"></div>
                 </div>
+
             </div>
 
             <div class="lg:col-span-7 flex flex-col gap-8 items-center text-center lg:items-start lg:text-left order-2 lg:order-2">

@@ -7,7 +7,7 @@ const certificacionesData = {
         emisor: "Amazon Web Services",
         fecha: "Ene. 2026",
         habilidades: "Tecnología de la Nube",
-        imagen: "static/img/logos/aws.png",
+        imagen: "static/img/logos/aws_cloud_practitioner.png",
         url: "https://www.credly.com/badges/2d45672a-48b4-4013-808f-31c04072bb73/public_url"
     },
     "aws-ai": {
@@ -15,7 +15,7 @@ const certificacionesData = {
         emisor: "Amazon Web Services",
         fecha: "Ene. 2026",
         habilidades: "Inteligencia Artificial",
-        imagen: "static/img/logos/aws.png",
+        imagen: "static/img/logos/aws_ai_practitioner.png",
         url: "https://www.credly.com/badges/c988f3a8-7022-43cb-9d65-9aa24e88f97f/public_url"
     },
     "oracle-ai-pro": {
@@ -23,7 +23,7 @@ const certificacionesData = {
         emisor: "Oracle",
         fecha: "Ago. 2025",
         habilidades: "Inteligencia Artificial Generativa",
-        imagen: "static/img/logos/oracle.png",
+        imagen: "static/img/logos/oracle_ai_professional.png",
         url: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=6582C447AEECF465B74B30D01D884790D1DED49B9AE05C578BE6FC5F87FE6F81"
     },
     "oracle-dev-pro": {
@@ -31,7 +31,7 @@ const certificacionesData = {
         emisor: "Oracle",
         fecha: "Sep. 2025",
         habilidades: "Desarrollo de Aplicaciones",
-        imagen: "static/img/logos/oracle.png",
+        imagen: "static/img/logos/oracle_developer_professional.png",
         url: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=4D11E3EE49FE3FEA9B35687602B2C0DC19F0E7199C4AF982770081E4BDC783B5"
     },
     "oracle-oci-assoc": {
@@ -39,7 +39,7 @@ const certificacionesData = {
         emisor: "Oracle",
         fecha: "Ago. 2025",
         habilidades: "Tecnología en la Nube Oracle",
-        imagen: "static/img/logos/oracle.png",
+        imagen: "static/img/logos/oracle_cloud_associate.png",
         url: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=FF54D5ABED5E9CB3DC9911C38388286977EA4716538312B45208B541F980CEB9"
     },
     "oracle-ai-assoc": {
@@ -47,7 +47,7 @@ const certificacionesData = {
         emisor: "Oracle",
         fecha: "Sep. 2025",
         habilidades: "Inteligencia Artificial Aprendizaje de Máquina",
-        imagen: "static/img/logos/oracle.png",
+        imagen: "static/img/logos/oracle_ai_associate.png",
         url: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=D2718C25F892B7E4971471C86FD8B46CB74494922FE11EA5F7CBAB9A064CB45F"
     },
     "oracle-data-pro": {
@@ -55,7 +55,7 @@ const certificacionesData = {
         emisor: "Oracle",
         fecha: "Oct. 2025",
         habilidades: "Ciencia de Datos IA",
-        imagen: "static/img/logos/oracle.png",
+        imagen: "static/img/logos/oracle_data_science_professional.png",
         url: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=49DC655EC45500898B6310E36C9CF5ABC57B48F1BACA784ED3E296BDEFCC3F98"
     },
     "python-pcep": {
@@ -63,7 +63,7 @@ const certificacionesData = {
         emisor: "Python",
         fecha: "Dic. 2025",
         habilidades: "Desarrollador Python",
-        imagen: "static/img/logos/python_institute.png",
+        imagen: "static/img/logos/python_pcep.png",
         url: "https://verify.openedg.org/?id=X8Wv.TU7j.416N"
     }
 };

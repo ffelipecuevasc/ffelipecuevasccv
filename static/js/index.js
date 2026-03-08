@@ -112,7 +112,8 @@ function injectComponents() {
                     <div class="w-48 bg-white dark:bg-orient-900 border-t-2 border-primary shadow-xl rounded-b-lg overflow-hidden ring-1 ring-black/5">
                         <a class="block px-5 py-3 text-sm font-medium text-orient-700 dark:text-orient-300 hover:text-primary dark:hover:text-primary hover:bg-orient-50 dark:hover:bg-orient-800 transition-colors border-b border-orient-100 dark:border-orient-800" href="desarrollador.html">Desarrollador</a>
                         <a class="block px-5 py-3 text-sm font-medium text-orient-700 dark:text-orient-300 hover:text-primary dark:hover:text-primary hover:bg-orient-50 dark:hover:bg-orient-800 transition-colors border-b border-orient-100 dark:border-orient-800" href="docente.html">Docente Universitario</a>
-                        <a class="block px-5 py-3 text-sm font-medium text-orient-700 dark:text-orient-300 hover:text-primary dark:hover:text-primary hover:bg-orient-50 dark:hover:bg-orient-800 transition-colors" href="instructor.html">Instructor Certificado</a>
+                        <a class="block px-5 py-3 text-sm font-medium text-orient-700 dark:text-orient-300 hover:text-primary dark:hover:text-primary hover:bg-orient-50 dark:hover:bg-orient-800 transition-colors border-b border-orient-100 dark:border-orient-800" href="instructor.html">Instructor REUF</a>
+                        <a class="block px-5 py-3 text-sm font-medium text-orient-700 dark:text-orient-300 hover:text-primary dark:hover:text-primary hover:bg-orient-50 dark:hover:bg-orient-800 transition-colors border-b border-orient-100 dark:border-orient-800" href="talento-digital.html">Talento Digital</a>
                     </div>
                 </div>
             </div>
@@ -134,7 +135,8 @@ function injectComponents() {
             <div class="pl-4 border-l-2 border-orient-100 dark:border-orient-700 space-y-2">
                 <a class="block text-sm text-orient-500 hover:text-primary" href="desarrollador.html">Desarrollador</a>
                 <a class="block text-sm text-orient-500 hover:text-primary" href="docente.html">Docente</a>
-                <a class="block text-sm text-orient-500 hover:text-primary" href="instructor.html">Instructor</a>
+                <a class="block text-sm text-orient-500 hover:text-primary" href="instructor.html">Instructor REUF</a>
+                <a class="block text-sm text-orient-500 hover:text-primary" href="talento-digital.html">Talento Digital</a>
             </div>
             <a class="text-base font-medium hover:text-primary transition-colors" href="contacto.html">Contacto</a>
             <a href="static/CV_Felipe_Cuevas_2026.pdf" download="CV_Felipe_Cuevas_2026.pdf" class="flex items-center justify-center rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-white w-full">

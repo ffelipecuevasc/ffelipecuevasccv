@@ -115,11 +115,11 @@ body {
    9. Component: Calendly Widget
    ========================================= */
 #calendly-widget {
-    height: 550px !important;
+    height: 500px !important;
 }
 
 @media (min-width: 1024px) {
     #calendly-widget {
-        height: 750px !important;
+        height: 600px !important;
     }
 }

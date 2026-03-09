@@ -18,8 +18,8 @@
     <meta name="twitter:description" content="CV En Línea: Instructor Certificado, Desarrollo Full Stack & Inteligencia Artificial.">
     <meta name="twitter:image" content="https://ffelipecuevasc.github.io/ffelipecuevasccv/static/img/felipe_cuevas.png">
 
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="static/css/tailwind.css" />
     <link rel="stylesheet" href="static/css/index.css"/>
     <link rel="stylesheet" href="static/css/aos.css" />
@@ -41,34 +41,37 @@
         <div class="w-full max-w-[1200px] px-6 md:px-10 flex flex-col gap-12">
             <div class="flex flex-wrap justify-between items-end gap-6 border-b border-orient-200 dark:border-orient-800 pb-8">
                 <div class="flex flex-col gap-3">
-                    <h1 class="text-orient-950 dark:text-orient-50 text-3xl md:text-5xl font-black leading-tight tracking-[-0.033em]">
+                    <h1 data-aos="fade-down" class="text-orient-950 dark:text-orient-50 text-3xl md:text-5xl font-black leading-tight tracking-[-0.033em]">
                         Educación &amp; <span class="text-primary">Certificaciones</span>
                     </h1>
-                    <p class="text-orient-600 dark:text-orient-300 text-lg font-normal leading-normal max-w-2xl">
+                    <p data-aos="fade-up" data-aos-delay="100" class="text-orient-600 dark:text-orient-300 text-lg font-normal leading-normal max-w-2xl">
                         Acá te dejo el resumen de mi educación universitaria, diplomados y certificaciones profesionales
                         en empresas como <strong>Oracle</strong> y <strong>Amazon</strong>.
                     </p>
                 </div>
             </div>
+
             <section>
-                <div class="flex items-center gap-3 mb-8">
+                <div data-aos="fade-right" class="flex items-center gap-3 mb-8">
                     <span class="material-symbols-outlined text-primary text-3xl">history_edu</span>
                     <h2 class="text-orient-950 dark:text-orient-50 text-2xl font-bold leading-tight tracking-[-0.015em]">
-                        Educación Universitaria</h2>
+                        Educación Universitaria
+                    </h2>
                 </div>
                 <div class="grid grid-cols-[40px_1fr] gap-x-6">
-                    <div class="flex flex-col items-center gap-1">
-                        <div class="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary shadow-lg    ">
+
+                    <div data-aos="fade-down" class="flex flex-col items-center gap-1">
+                        <div class="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary shadow-lg transition-transform hover:scale-110 duration-300">
                             <span class="material-symbols-outlined text-xl">workspace_premium</span>
                         </div>
                         <div class="w-[2px] bg-primary/20 h-full"></div>
                     </div>
-                    <div class="flex flex-1 flex-col pb-12 pt-1">
+                    <div data-aos="fade-left" data-aos-delay="50" class="flex flex-1 flex-col pb-12 pt-1 group">
                         <div class="flex flex-wrap items-center justify-between gap-2">
-                            <h3 class="text-orient-950 dark:text-orient-50 text-xl font-bold">
+                            <h3 class="text-orient-950 dark:text-orient-50 text-xl font-bold group-hover:text-primary transition-colors">
                                 Diplomado en Educación Andragógica
                             </h3>
-                            <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">En Progreso</span>
+                            <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider shadow-sm">En Progreso</span>
                         </div>
                         <p class="text-orient-600 dark:text-orient-300 text-lg font-medium mt-1">
                             <strong>Universidad de Chile</strong> | 2025 - Actualidad</p>
@@ -77,56 +80,63 @@
                             de herramientas para enseñar y evaluar a trabajadores que se perfeccionan.
                         </p>
                         <div class="mt-4 flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-orient-100 dark:bg-orient-800 text-orient-950 dark:text-orient-50 text-xs rounded-md">Liderazgo</span>
-                            <span class="px-3 py-1 bg-orient-100 dark:bg-orient-800 text-orient-950 dark:text-orient-50 text-xs rounded-md">Aprendizaje Basado en Proyectos</span>
+                            <span class="px-3 py-1 bg-orient-100 dark:bg-orient-800 text-orient-950 dark:text-orient-50 text-xs rounded-md shadow-sm hover:shadow-md transition-shadow">Liderazgo</span>
+                            <span class="px-3 py-1 bg-orient-100 dark:bg-orient-800 text-orient-950 dark:text-orient-50 text-xs rounded-md shadow-sm hover:shadow-md transition-shadow">Aprendizaje Basado en Proyectos</span>
                         </div>
                     </div>
-                    <div class="flex flex-col items-center gap-1">
-                        <div class="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-white shadow-lg">
+
+                    <div data-aos="fade-down" data-aos-delay="100" class="flex flex-col items-center gap-1">
+                        <div class="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-white shadow-lg transition-transform hover:scale-110 duration-300">
                             <span class="material-symbols-outlined text-xl">workspace_premium</span>
                         </div>
                         <div class="w-[2px] bg-primary/20 h-full"></div>
                     </div>
-                    <div class="flex flex-1 flex-col pb-12 pt-1">
-                        <h3 class="text-orient-950 dark:text-orient-50 text-xl font-bold">
+                    <div data-aos="fade-left" data-aos-delay="150" class="flex flex-1 flex-col pb-12 pt-1 group">
+                        <h3 class="text-orient-950 dark:text-orient-50 text-xl font-bold group-hover:text-primary transition-colors">
                             Ingeniería en Informática
                         </h3>
                         <p class="text-orient-600 dark:text-orient-300 text-lg font-medium mt-1">
                             Universidad Tecnológica de Chile INACAP | 2007 - 2011</p>
                         <ul class="mt-4 space-y-2 list-disc list-inside text-sm text-orient-700 dark:text-orient-200">
-                            <li><strong>Titulado con Honores</strong> - Mejor Ingeniero</li>
-                            <li>Tésis: Sistema de Rastreo GPS de Flota <em>(Head Hunter)</em></li>
-                            <li>Alumno Tutor Académico</li>
+                            <li class="transition-transform hover:translate-x-1 duration-200"><strong>Titulado con Honores</strong> - Mejor Ingeniero</li>
+                            <li class="transition-transform hover:translate-x-1 duration-200">Tésis: Sistema de Rastreo GPS de Flota <em>(Head Hunter)</em></li>
+                            <li class="transition-transform hover:translate-x-1 duration-200">Alumno Tutor Académico</li>
                         </ul>
                     </div>
-                    <div class="flex flex-col items-center gap-1">
-                        <div class="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-white shadow-lg">
+
+                    <div data-aos="fade-down" data-aos-delay="200" class="flex flex-col items-center gap-1">
+                        <div class="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-white shadow-lg transition-transform hover:scale-110 duration-300">
                             <span class="material-symbols-outlined text-xl">workspace_premium</span>
                         </div>
                         <div class="w-[2px] bg-primary/20 h-full"></div>
                     </div>
-                    <div class="flex flex-1 flex-col pt-1">
-                        <h3 class="text-orient-950 dark:text-orient-50 text-xl font-bold">Técnico Analista Programador</h3>
+                    <div data-aos="fade-left" data-aos-delay="250" class="flex flex-1 flex-col pt-1 group">
+                        <h3 class="text-orient-950 dark:text-orient-50 text-xl font-bold group-hover:text-primary transition-colors">
+                            Técnico Analista Programador
+                        </h3>
                         <p class="text-orient-600 dark:text-orient-300 text-lg font-medium mt-1">
                             Universidad Tecnológica de Chile INACAP | 2007 - 2011
                         </p>
                         <ul class="mt-4 space-y-2 list-disc list-inside text-sm text-orient-700 dark:text-orient-200">
-                            <li><strong>Titulado con Honores</strong> - Mejor Técnico</li>
-                            <li>Mejor Calificación en el Examen Final de Competencias (EFC)</li>
-                            <li>Alumno Tutor Académico</li>
+                            <li class="transition-transform hover:translate-x-1 duration-200"><strong>Titulado con Honores</strong> - Mejor Técnico</li>
+                            <li class="transition-transform hover:translate-x-1 duration-200">Mejor Calificación en el Examen Final de Competencias (EFC)</li>
+                            <li class="transition-transform hover:translate-x-1 duration-200">Alumno Tutor Académico</li>
                         </ul>
                     </div>
                 </div>
             </section>
+
             <section class="mt-8">
-                <div class="flex items-center gap-3 mb-8">
+                <div data-aos="fade-right" class="flex items-center gap-3 mb-8">
                     <span class="material-symbols-outlined text-primary text-3xl">verified</span>
                     <h2 class="text-orient-950 dark:text-orient-50 text-2xl font-bold leading-tight tracking-[-0.015em]">
-                        Certificaciones Profesionales</h2>
+                        Certificaciones Profesionales
+                    </h2>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div data-aos="fade-up" data-aos-delay="0" data-cert-id="aws-cloud" class="modal-trigger cert-card flex items-start gap-4 p-6 rounded-xl border border-orient-200 dark:border-orient-800 bg-white dark:bg-orient-900 hover:shadow-xl hover:border-primary/30 transition-all cursor-pointer group">
-                        <div class="size-16 flex-shrink-0 bg-background-light dark:bg-background-dark rounded-lg p-2 flex items-center justify-center overflow-hidden">
+
+                    <div data-aos="fade-up" data-aos-delay="0" data-cert-id="aws-cloud" class="modal-trigger cert-card flex items-start gap-4 p-6 rounded-xl border border-orient-200 dark:border-orient-800 bg-white dark:bg-orient-900 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1 hover:border-primary/50 transition-all duration-300 cursor-pointer group">
+                        <div class="size-16 flex-shrink-0 bg-background-light dark:bg-background-dark rounded-lg p-2 flex items-center justify-center overflow-hidden transition-transform duration-300 group-hover:scale-105 group-hover:shadow-md">
                             <img class="w-full h-full object-contain" data-alt="Logo Certificación Profesional AWS"
                                  src="static/img/logos/aws_cloud_practitioner.png"/>
                         </div>
@@ -139,8 +149,8 @@
                         </div>
                     </div>
 
-                    <div data-aos="fade-up" data-aos-delay="0" data-cert-id="aws-ai" class="modal-trigger cert-card flex items-start gap-4 p-6 rounded-xl border border-orient-200 dark:border-orient-800 bg-white dark:bg-orient-900 hover:shadow-xl hover:border-primary/30 transition-all cursor-pointer group">
-                        <div class="size-16 flex-shrink-0 bg-background-light dark:bg-background-dark rounded-lg p-2 flex items-center justify-center overflow-hidden">
+                    <div data-aos="fade-up" data-aos-delay="50" data-cert-id="aws-ai" class="modal-trigger cert-card flex items-start gap-4 p-6 rounded-xl border border-orient-200 dark:border-orient-800 bg-white dark:bg-orient-900 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1 hover:border-primary/50 transition-all duration-300 cursor-pointer group">
+                        <div class="size-16 flex-shrink-0 bg-background-light dark:bg-background-dark rounded-lg p-2 flex items-center justify-center overflow-hidden transition-transform duration-300 group-hover:scale-105 group-hover:shadow-md">
                             <img class="w-full h-full object-contain" data-alt="Logo Certificación Profesional AWS"
                                  src="static/img/logos/aws_ai_practitioner.png"/>
                         </div>
@@ -153,8 +163,8 @@
                         </div>
                     </div>
 
-                    <div data-aos="fade-up" data-aos-delay="100" data-cert-id="oracle-ai-pro" class="modal-trigger cert-card flex items-start gap-4 p-6 rounded-xl border border-orient-200 dark:border-orient-800 bg-white dark:bg-orient-900 hover:shadow-xl hover:border-primary/30 transition-all cursor-pointer group">
-                        <div class="size-16 flex-shrink-0 bg-background-light dark:bg-background-dark rounded-lg p-2 flex items-center justify-center overflow-hidden">
+                    <div data-aos="fade-up" data-aos-delay="100" data-cert-id="oracle-ai-pro" class="modal-trigger cert-card flex items-start gap-4 p-6 rounded-xl border border-orient-200 dark:border-orient-800 bg-white dark:bg-orient-900 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1 hover:border-primary/50 transition-all duration-300 cursor-pointer group">
+                        <div class="size-16 flex-shrink-0 bg-background-light dark:bg-background-dark rounded-lg p-2 flex items-center justify-center overflow-hidden transition-transform duration-300 group-hover:scale-105 group-hover:shadow-md">
                             <img class="w-full h-full object-contain" data-alt="Logo Certificación Profesional Oracle"
                                  src="static/img/logos/oracle_ai_professional.png"/>
                         </div>
@@ -167,8 +177,8 @@
                         </div>
                     </div>
 
-                    <div data-aos="fade-up" data-aos-delay="100" data-cert-id="oracle-dev-pro" class="modal-trigger cert-card flex items-start gap-4 p-6 rounded-xl border border-orient-200 dark:border-orient-800 bg-white dark:bg-orient-900 hover:shadow-xl hover:border-primary/30 transition-all cursor-pointer group">
-                        <div class="size-16 flex-shrink-0 bg-background-light dark:bg-background-dark rounded-lg p-2 flex items-center justify-center overflow-hidden">
+                    <div data-aos="fade-up" data-aos-delay="150" data-cert-id="oracle-dev-pro" class="modal-trigger cert-card flex items-start gap-4 p-6 rounded-xl border border-orient-200 dark:border-orient-800 bg-white dark:bg-orient-900 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1 hover:border-primary/50 transition-all duration-300 cursor-pointer group">
+                        <div class="size-16 flex-shrink-0 bg-background-light dark:bg-background-dark rounded-lg p-2 flex items-center justify-center overflow-hidden transition-transform duration-300 group-hover:scale-105 group-hover:shadow-md">
                             <img class="w-full h-full object-contain" data-alt="Logo Certificación Profesional Oracle"
                                  src="static/img/logos/oracle_developer_professional.png"/>
                         </div>
@@ -181,8 +191,8 @@
                         </div>
                     </div>
 
-                    <div data-aos="fade-up" data-aos-delay="200" data-cert-id="oracle-oci-assoc" class="modal-trigger cert-card flex items-start gap-4 p-6 rounded-xl border border-orient-200 dark:border-orient-800 bg-white dark:bg-orient-900 hover:shadow-xl hover:border-primary/30 transition-all cursor-pointer group">
-                        <div class="size-16 flex-shrink-0 bg-background-light dark:bg-background-dark rounded-lg p-2 flex items-center justify-center overflow-hidden">
+                    <div data-aos="fade-up" data-aos-delay="200" data-cert-id="oracle-oci-assoc" class="modal-trigger cert-card flex items-start gap-4 p-6 rounded-xl border border-orient-200 dark:border-orient-800 bg-white dark:bg-orient-900 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1 hover:border-primary/50 transition-all duration-300 cursor-pointer group">
+                        <div class="size-16 flex-shrink-0 bg-background-light dark:bg-background-dark rounded-lg p-2 flex items-center justify-center overflow-hidden transition-transform duration-300 group-hover:scale-105 group-hover:shadow-md">
                             <img class="w-full h-full object-contain" data-alt="Logo Certificación Profesional Oracle"
                                  src="static/img/logos/oracle_cloud_associate.png"/>
                         </div>
@@ -195,8 +205,8 @@
                         </div>
                     </div>
 
-                    <div data-aos="fade-up" data-aos-delay="200" data-cert-id="oracle-ai-assoc" class="modal-trigger cert-card flex items-start gap-4 p-6 rounded-xl border border-orient-200 dark:border-orient-800 bg-white dark:bg-orient-900 hover:shadow-xl hover:border-primary/30 transition-all cursor-pointer group">
-                        <div class="size-16 flex-shrink-0 bg-background-light dark:bg-background-dark rounded-lg p-2 flex items-center justify-center overflow-hidden">
+                    <div data-aos="fade-up" data-aos-delay="250" data-cert-id="oracle-ai-assoc" class="modal-trigger cert-card flex items-start gap-4 p-6 rounded-xl border border-orient-200 dark:border-orient-800 bg-white dark:bg-orient-900 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1 hover:border-primary/50 transition-all duration-300 cursor-pointer group">
+                        <div class="size-16 flex-shrink-0 bg-background-light dark:bg-background-dark rounded-lg p-2 flex items-center justify-center overflow-hidden transition-transform duration-300 group-hover:scale-105 group-hover:shadow-md">
                             <img class="w-full h-full object-contain" data-alt="Logo Certificación Profesional Oracle"
                                  src="static/img/logos/oracle_ai_associate.png"/>
                         </div>
@@ -209,8 +219,8 @@
                         </div>
                     </div>
 
-                    <div data-aos="fade-up" data-aos-delay="300" data-cert-id="oracle-data-pro" class="modal-trigger cert-card flex items-start gap-4 p-6 rounded-xl border border-orient-200 dark:border-orient-800 bg-white dark:bg-orient-900 hover:shadow-xl hover:border-primary/30 transition-all cursor-pointer group">
-                        <div class="size-16 flex-shrink-0 bg-background-light dark:bg-background-dark rounded-lg p-2 flex items-center justify-center overflow-hidden">
+                    <div data-aos="fade-up" data-aos-delay="300" data-cert-id="oracle-data-pro" class="modal-trigger cert-card flex items-start gap-4 p-6 rounded-xl border border-orient-200 dark:border-orient-800 bg-white dark:bg-orient-900 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1 hover:border-primary/50 transition-all duration-300 cursor-pointer group">
+                        <div class="size-16 flex-shrink-0 bg-background-light dark:bg-background-dark rounded-lg p-2 flex items-center justify-center overflow-hidden transition-transform duration-300 group-hover:scale-105 group-hover:shadow-md">
                             <img class="w-full h-full object-contain" data-alt="Logo Certificación Profesional Oracle"
                                  src="static/img/logos/oracle_data_science_professional.png"/>
                         </div>
@@ -223,8 +233,8 @@
                         </div>
                     </div>
 
-                    <div data-aos="fade-up" data-aos-delay="300" data-cert-id="python-pcep" class="modal-trigger cert-card flex items-start gap-4 p-6 rounded-xl border border-orient-200 dark:border-orient-800 bg-white dark:bg-orient-900 hover:shadow-xl hover:border-primary/30 transition-all cursor-pointer group">
-                        <div class="size-16 flex-shrink-0 bg-background-light dark:bg-background-dark rounded-lg p-2 flex items-center justify-center overflow-hidden">
+                    <div data-aos="fade-up" data-aos-delay="350" data-cert-id="python-pcep" class="modal-trigger cert-card flex items-start gap-4 p-6 rounded-xl border border-orient-200 dark:border-orient-800 bg-white dark:bg-orient-900 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1 hover:border-primary/50 transition-all duration-300 cursor-pointer group">
+                        <div class="size-16 flex-shrink-0 bg-background-light dark:bg-background-dark rounded-lg p-2 flex items-center justify-center overflow-hidden transition-transform duration-300 group-hover:scale-105 group-hover:shadow-md">
                             <img class="w-full h-full object-contain" data-alt="Logo Certificación Profesional Python Institute"
                                  src="static/img/logos/python_pcep.png"/>
                         </div>
@@ -239,8 +249,8 @@
                 </div>
             </section>
 
-            <div class="mt-12 p-8 bg-primary/5 dark:bg-primary/10 rounded-2xl border border-primary/20 flex flex-col md:flex-row items-center gap-8">
-                <div class="flex-shrink-0 p-4 bg-primary/10 rounded-full">
+            <div data-aos="zoom-in" data-aos-delay="100" class="mt-12 p-8 bg-primary/5 dark:bg-primary/10 rounded-2xl border border-primary/20 flex flex-col md:flex-row items-center gap-8 shadow-sm hover:shadow-lg transition-shadow duration-300">
+                <div class="flex-shrink-0 p-4 bg-primary/10 rounded-full transition-transform hover:rotate-12 duration-300">
                     <span class="material-symbols-outlined text-primary text-5xl">military_tech</span>
                 </div>
                 <div class="text-center md:text-left">
@@ -252,22 +262,22 @@
                         Administración de Bases de Datos, Arquitectura de Tecnología en la Nube y mucho más.
                     </p>
                     <div class="flex flex-wrap justify-center md:justify-start gap-4">
-                        <span class="text-primary text-sm font-bold flex items-center gap-1">
+                        <span class="text-primary text-sm font-bold flex items-center gap-1 transition-transform hover:translate-x-1 duration-200">
                             <span class="material-symbols-outlined text-lg">check_circle</span> 10+ Años de Experiencia
                         </span>
-                        <span class="text-primary text-sm font-bold flex items-center gap-1">
+                        <span class="text-primary text-sm font-bold flex items-center gap-1 transition-transform hover:translate-x-1 duration-200">
                             <span class="material-symbols-outlined text-lg">check_circle</span> 5+ Bootcamps de Talento Digital
                         </span>
                     </div>
                 </div>
             </div>
 
-            <div class="flex flex-col items-center gap-6 py-12 border-t border-orient-200 dark:border-orient-800">
+            <div data-aos="fade-up" class="flex flex-col items-center gap-6 py-12 border-t border-orient-200 dark:border-orient-800">
                 <p class="text-sm font-medium text-orient-600 dark:text-orient-400 uppercase tracking-widest">
                     ¿Interesado en mi CV completo?
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 w-full justify-center">
-                    <a href="static/CV_Felipe_Cuevas_2026.pdf" download="CV_Felipe_Cuevas_2026.pdf" class="relative flex w-full sm:w-auto items-center justify-center rounded-lg h-12 px-8 bg-primary text-white text-base font-bold shadow-lg hover:translate-y-[-2px] transition-all">
+                    <a href="static/CV_Felipe_Cuevas_2026.pdf" download="CV_Felipe_Cuevas_2026.pdf" class="relative flex w-full sm:w-auto items-center justify-center rounded-lg h-12 px-8 bg-primary text-white text-base font-bold shadow-lg hover:-translate-y-1 hover:shadow-primary/30 transition-all duration-300">
                         <span class="absolute -top-1 -right-1 flex h-3 w-3">
                             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-orient-100 opacity-75"></span>
                             <span class="relative inline-flex rounded-full h-3 w-3 bg-orient-100"></span>
@@ -275,12 +285,13 @@
                         <span class="material-symbols-outlined mr-2">download</span>
                         Descargar CV
                     </a>
-                    <a href="contacto.html" class="flex w-full sm:w-auto items-center justify-center rounded-lg h-12 px-6 bg-orient-100 dark:bg-orient-800 text-orient-950 dark:text-orient-50 text-base font-bold hover:bg-orient-200 transition-all">
+                    <a href="contacto.html" class="flex w-full sm:w-auto items-center justify-center rounded-lg h-12 px-6 bg-orient-100 dark:bg-orient-800 text-orient-950 dark:text-orient-50 text-base font-bold hover:bg-orient-200 dark:hover:bg-orient-700 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
                         Envíame un mensaje
                     </a>
                 </div>
             </div>
         </div>
+
         <div id="cert-modal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-orient-950/80 backdrop-blur-sm p-4 transition-opacity duration-300 opacity-0">
             <div id="cert-modal-content" class="relative w-full max-w-lg scale-95 transform overflow-hidden rounded-2xl bg-white dark:bg-orient-900 border border-orient-200 dark:border-orient-800 p-8 shadow-2xl transition-all duration-300">
 

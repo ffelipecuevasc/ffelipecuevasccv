@@ -117,6 +117,7 @@ function injectComponents() {
                     </div>
                 </div>
             </div>
+            <a class="nav-link text-sm font-medium hover:text-primary transition-colors" href="recursos.html">Recursos</a>
             <a class="nav-link text-sm font-medium hover:text-primary transition-colors" href="contacto.html">Contacto</a>
         </nav>
 
@@ -138,6 +139,7 @@ function injectComponents() {
                 <a class="block text-sm text-orient-500 hover:text-primary" href="instructor.html">Instructor REUF</a>
                 <a class="block text-sm text-orient-500 hover:text-primary" href="talento-digital.html">Talento Digital</a>
             </div>
+            <a class="text-base font-medium hover:text-primary transition-colors" href="recursos.html">Recursos</a>
             <a class="text-base font-medium hover:text-primary transition-colors" href="contacto.html">Contacto</a>
             <a href="static/CV_Felipe_Cuevas_2026.pdf" download="CV_Felipe_Cuevas_2026.pdf" class="flex items-center justify-center rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-white w-full">
                 Descargar CV

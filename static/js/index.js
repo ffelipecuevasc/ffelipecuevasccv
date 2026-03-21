@@ -80,6 +80,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 3. Inicializar Lógica del Modal de Certificaciones
     initializeModalLogic();
+
+    // 4. Inicializar Lógica del "Smart Header"
+    initializeSmartHeader();
 });
 
 // =========================================
@@ -381,5 +384,43 @@ if (typeof AOS !== 'undefined') {
         duration: 600, // Duración de la animación en milisegundos
         once: true,    // La animación ocurre solo una vez al hacer scroll
         easing: 'ease-out-quad', // Curva de animación profesional
+    });
+}
+
+// =========================================
+// 7. Lógica del "Smart Header"
+// =========================================
+function initializeSmartHeader() {
+    const header = document.getElementById('app-header');
+    if (!header) return;
+
+    // 1. Añadir clases de transición para que el movimiento sea fluido
+    header.classList.add('transition-transform', 'duration-300', 'ease-in-out');
+
+    // 2. Variable de estado para registrar la posición anterior del scroll
+    let lastScroll = 0;
+
+    // 3. Listener del evento de scroll
+    window.addEventListener('scroll', () => {
+        // 4. Capturar el scroll actual
+        const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+        
+        // 5. Validar caso extremo: si el menú móvil está abierto, no hacer nada
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+            return;
+        }
+
+        // 6. Lógica de ocultamiento: scroll hacia abajo y más de 80px
+        if (currentScroll > lastScroll && currentScroll > 80) {
+            header.classList.add('-translate-y-full');
+        } 
+        // 7. Lógica de revelado: scroll hacia arriba
+        else if (currentScroll < lastScroll) {
+            header.classList.remove('-translate-y-full');
+        }
+
+        // 8. Actualizar el estado para la próxima evaluación, evitando números negativos
+        lastScroll = currentScroll <= 0 ? 0 : currentScroll;
     });
 }

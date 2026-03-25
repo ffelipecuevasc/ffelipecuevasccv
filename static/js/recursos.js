@@ -12,6 +12,17 @@ const recursosData = [
         dificultad: "Básico",
         tecnologia: "LinkedIn",
         url: "static/recursos/empleabilidad/MANUAL - Optimizar Perfil LinkedIn.pdf"
+    },
+    {
+        id: 2,
+        titulo: "Hackatón de Estudio para Django & Python",
+        descripcion: "Actividad en modalidad Hackatón para profundizar en Django y Python.",
+        categoriaPadre: "Desarrollo Full Stack Python",
+        categoriaFiltro: "Python",
+        formato: "pdf",
+        dificultad: "Intermedio",
+        tecnologia: "Python",
+        url: "static/recursos/python/ACTIVIDAD - Hackatón de Estudio.pdf"
     }
 ];
 

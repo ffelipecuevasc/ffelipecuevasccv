@@ -5,7 +5,7 @@ const recursosData = [
     {
         id: 1,
         titulo: "Optimización de Perfil LinkedIn para Devs",
-        descripcion: "Manual de estrategia y posicionamiento digital para destacar en búsquedas de reclutadores IT.",
+        descripcion: "Manual de estrategia y posicionamiento digital para destacar en LinkedIn.",
         categoriaPadre: "Empleabilidad",
         categoriaFiltro: "Empleabilidad",
         formato: "pdf",
@@ -27,18 +27,18 @@ const recursosData = [
     {
         id: 3,
         titulo: "Taller: Despliega tu CV Online",
-        descripcion: "Actividad guiada para construir y desplegar tu propio portafolio web utilizando la IA Stitch.",
+        descripcion: "Actividad guiada para crear tu CV web utilizando la IA Stitch y GitHub.",
         categoriaPadre: "Empleabilidad",
         categoriaFiltro: "Empleabilidad",
         formato: "pdf",
         dificultad: "Intermedio",
-        tecnologia: "HTML/CSS & GitHub",
+        tecnologia: "CV Web & GitHub",
         url: "static/recursos/empleabilidad/TALLER - CV Online.pdf"
     },
     {
         id: 4,
         titulo: "Taller: Despliegue en AlwaysData",
-        descripcion: "Procedimiento técnico paso a paso para llevar tu proyecto Django a producción conectando GitHub y bases de datos MySQL.",
+        descripcion: "Procedimiento técnico para subir tu Proyecto Web Django en AlwaysData.",
         categoriaPadre: "Desarrollo Full Stack Python",
         categoriaFiltro: "Python",
         formato: "pdf",
@@ -49,13 +49,24 @@ const recursosData = [
     {
         id: 5,
         titulo: "Taller: Despliegue en Google Cloud Platform",
-        descripcion: "Taller práctico para el despliegue profesional de aplicaciones web en una arquitectura Serverless utilizando Cloud Run.",
+        descripcion: "Taller práctico para el despliegue profesional en Google Cloud.",
         categoriaPadre: "Desarrollo Full Stack Python",
         categoriaFiltro: "Python",
         formato: "pdf",
         dificultad: "Avanzado",
         tecnologia: "Google Cloud",
         url: "static/recursos/python/TALLER - Despliegue Plataforma Google Cloud.pdf"
+    },
+    {
+        id: 6,
+        titulo: "Entrevista a Guido van Rossum",
+        descripcion: "El creador de Python profundiza sobre Python y su rol en la IA.",
+        categoriaPadre: "Desarrollo Full Stack Python",
+        categoriaFiltro: "Python",
+        formato: "video",
+        dificultad: "Intermedio",
+        tecnologia: "Python",
+        url: "https://youtu.be/Qrad7LPoJjU"
     }
 ];
 

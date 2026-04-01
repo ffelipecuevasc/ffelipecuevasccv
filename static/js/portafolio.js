@@ -23,7 +23,7 @@ const portafolioData = [
         gridSpan: "col-span-12 md:col-span-5",
         image: "static/img/manzagrafica.png",
         alt: "Manza Gráfica App Django",
-        link: null, // Si no hay link, renderiza un badge informativo en vez de un botón clickeable
+        link: "https://manzagrafica.pythonanywhere.com/",
         overlayBadge: {icon: "terminal", text: "Python · Django", bgClass: "bg-orient-700"},
         categoryPill: {icon: "api", text: "Back-End", bgClass: "bg-orient-800 dark:bg-orient-700"},
         title: "Manza Gráfica App",
@@ -37,7 +37,7 @@ const portafolioData = [
         gridSpan: "col-span-12 md:col-span-5",
         image: "static/img/ricardo_ortiz.png",
         alt: "Ricardo Ortiz Orfebre",
-        link: null,
+        link: "https://ffelipecuevasc.github.io/ricardortiz/",
         overlayBadge: {icon: "terminal", text: "Python · Django", bgClass: "bg-orient-700"},
         categoryPill: {icon: "api", text: "Back-End", bgClass: "bg-orient-800 dark:bg-orient-700"},
         title: "Ricardo Ortiz Orfebre",
@@ -51,12 +51,41 @@ const portafolioData = [
         gridSpan: "col-span-12 md:col-span-7",
         image: "static/img/abogados.png",
         alt: "Sitio Web Estudio Abogados",
-        link: null,
+        link: "https://ffelipecuevasc.github.io/advogados/",
         overlayBadge: {icon: "web", text: "HTML5 · Bootstrap", bgClass: "bg-primary"},
         categoryPill: {icon: "web", text: "Front-End", bgClass: "bg-primary"},
         title: "Sitio Web Estudio de Abogados",
         description: "Sitio corporativo para estudio jurídico. Front-End con <strong class=\"text-orient-800 dark:text-orient-200 font-semibold\">Bootstrap 5</strong>, landing page optimizada para conversión, formulario de contacto integrado y diseño adaptado al rubro legal con paleta de colores sobria y profesional.",
         tags: ["HTML5", "Bootstrap 5", "CSS3", "JavaScript"]
+    },
+    {
+        id: "pf-card-benjamin",
+        category: "frontend",
+        delay: 250,
+        gridSpan: "col-span-12 md:col-span-6",
+        image: "static/img/benjamin_berna.png",
+        alt: "CV Online Benjamín Berna - Contador General",
+        link: "https://ffelipecuevasc.github.io/benjaminberna/",
+        overlayBadge: { icon: "open_in_new", text: "Ver Proyecto", bgClass: "bg-primary" },
+        categoryPill: { icon: "web", text: "Front-End", bgClass: "bg-primary" },
+        title: "CV Online — Benjamín Berna",
+        description: "Portafolio web profesional diseñado a medida para un Contador General. Interfaz corporativa enfocada en la presentación de servicios financieros, trayectoria laboral y captación de clientes. Estructurado con <strong class=\"text-orient-800 dark:text-orient-200 font-semibold\">Tailwind CSS</strong> para garantizar una experiencia de usuario rápida y 100% adaptable a dispositivos móviles.",
+        tags: ["HTML5", "Tailwind CSS", "JavaScript", "GitHub Pages"]
+    },
+    ,
+    {
+        id: "pf-card-gestion",
+        category: "backend",
+        delay: 300,
+        gridSpan: "col-span-12 md:col-span-6",
+        image: "static/img/gestion_escolar.png",
+        alt: "Sistema de Gestión Escolar - Backend Django",
+        link: "https://github.com/ffelipecuevasc/GestionEscolar",
+        overlayBadge: { icon: "open_in_new", text: "Ver Repo", bgClass: "bg-orient-700" },
+        categoryPill: { icon: "api", text: "Back-End", bgClass: "bg-orient-800 dark:bg-orient-700" },
+        title: "Sistema de Gestión Escolar",
+        description: "Desarrollo backend para la administración integral de instituciones educativas. Arquitectura construida con <strong class=\"text-orient-800 dark:text-orient-200 font-semibold\">Django y MySQL</strong>, implementando paneles de control, roles de usuario (profesores/alumnos), gestión de asignaturas y registro de calificaciones, con despliegue profesional en <strong class=\"text-orient-800 dark:text-orient-200 font-semibold\">AlwaysData</strong>.",
+        tags: ["Python", "Django", "MySQL", "AlwaysData"]
     }
 ];
 

@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const renderStandardCard = (data) => `
-        <div class="relative flex flex-col items-center bg-white dark:bg-orient-900 rounded-[2rem] p-8 shadow-lg border border-orient-200 dark:border-orient-800 transition-transform duration-300 hover:-translate-y-2 h-full">
+        <div class="relative flex flex-col items-center bg-white dark:bg-orient-900 rounded-[2rem] p-8 shadow-lg border border-orient-200 dark:border-orient-800 transition-transform duration-300 hover:-translate-y-2 h-full neon-glow-interactive">
             <div class="absolute -top-12 w-24 h-24 rounded-full border-4 border-white dark:border-orient-900 overflow-hidden bg-orient-100 shadow-md">
                 <img src="${data.imagen}" alt="${data.nombre}" class="w-full h-full object-cover" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(data.nombre)}&background=007EA7&color=fff'">
             </div>
@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
 
     const renderSpotlightCard = (data) => `
-        <div class="relative flex flex-col items-center bg-primary rounded-[2rem] p-8 shadow-2xl lg:scale-105 border border-primary-vibrant/30 z-10 transition-transform duration-300 hover:-translate-y-2 lg:hover:scale-110 h-full">
+        <div class="relative flex flex-col items-center bg-primary rounded-[2rem] p-8 shadow-2xl lg:scale-105 border border-primary-vibrant/30 z-10 transition-transform duration-300 hover:-translate-y-2 lg:hover:scale-110 h-full neon-glow-interactive">
             <div class="absolute -top-12 w-24 h-24 rounded-full border-4 border-primary overflow-hidden bg-white shadow-md">
                 <img src="${data.imagen}" alt="${data.nombre}" class="w-full h-full object-cover" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(data.nombre)}&background=ffffff&color=007EA7'">
             </div>
